@@ -6,6 +6,12 @@ addons:
   sauce_connect: true
   hosts:
     - airtap.local
+matrix:
+  include:
+  - os: linux
+  - os: linux-ppc64le
+    script: npm install
+
 env:
   global:
   - secure: AUsK+8fYSpwIMHcVt8Mu9SpG9RPHp4XDAwCQfpU3d5U65q8OVVC6C+XjvnNmEd2PoEJRHem8ZXEyRVfGM1sttKZLZP70TEKZOpOiRQnZiTQCAJ92TfGsDj/F4LoWSjUZUpfeg9b3iSp8G5dVw3+q9QZPIu6eykASK6bfcg//Cyg=
